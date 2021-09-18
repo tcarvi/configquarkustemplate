@@ -26,10 +26,10 @@
             - String value = config.getValue("value", String.class);
             - return "Config value from ConfigProvider " + value; }
 
-#### Arquivo de Configuração:
+#### Padrão para arquivo de Configuração, com ou sem profiles:
 - src/main/resources/application.yaml
 
-#### Dependências pom.xml:
+#### Dependências no pom.xml:
 ```xml
 <dependency>
     <groupId>io.quarkus</groupId>
