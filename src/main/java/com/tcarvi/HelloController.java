@@ -14,7 +14,7 @@ import io.quarkus.runtime.configuration.ProfileManager;
 public class HelloController {
 
     @GET
-    public String sayHello() {
-        return ProfileManager.getActiveProfile();
+    public String sayWhatIsActiveProfile() {
+        return "Hello, your active profile is " + ProfileManager.getActiveProfile();
     }
 }
