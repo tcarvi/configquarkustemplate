@@ -19,8 +19,8 @@ mvn package
 ---
 
 - It produces:  
-    - `artifactid.jar`
-    - `artifactid-runner.jar`
+    - `configquarkustemplate.jar`
+    - `configquarkustemplate-runner.jar`
 
 ---
 
