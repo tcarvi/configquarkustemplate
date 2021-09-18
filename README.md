@@ -4,8 +4,8 @@ Template for Quarkus config spec
 ### Directory: src/main/java/com/tcarvi/config
 - Configuration of your application parameters. 
 - Specification [microprofile-config](https://microprofile.io/project/eclipse/microprofile-config)
-- ConfigController1 execute a config injection, with @ConfigProperty pattern
-- ConfigController1 execute a config injection, with ConfigProvider.getConfig().getValue() pattern
+- Class ConfigController1 injects a config, with @ConfigProperty pattern
+- Class ConfigController2 injects a config, with ConfigProvider.getConfig().getValue() pattern
 
 ### File: src/main/resources/application.yaml
 - List of parameters to be injected 
