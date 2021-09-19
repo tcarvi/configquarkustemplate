@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 
 @Path("/pathforconfig1")
 @RequestScoped
-public class ConfigController1 {
+public class ConfigResource1 {
 
     @ConfigProperty(name = "injected.value")
     String injectedValue;
