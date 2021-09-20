@@ -8,15 +8,16 @@ import javax.ws.rs.Path;
 
 @Path("/pathforconfig1")
 @RequestScoped
-public class ConfigResource1 {
+public class ConfigInjectionPattern1Resource {
 
+    // Padrão 1 para injeção de propriedade de configuração
     @ConfigProperty(name = "injected.value")
     String injectedValue;
 
-    @Path("/endpointRSXinjected")
+    @Path("/endpointInjectionPattern1")
     @GET
     public String getInjectedConfigValue() {
-        return "injectedValue= " + injectedValue;
+        return "value injected by pattern 1 is = " + injectedValue;
     }
 
 }

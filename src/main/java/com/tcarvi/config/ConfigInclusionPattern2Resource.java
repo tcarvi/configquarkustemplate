@@ -9,13 +9,14 @@ import javax.ws.rs.Path;
 
 @Path("/pathforconfig2")
 @RequestScoped
-public class ConfigResource2 {
+public class ConfigInclusionPattern2Resource {
 
-    @Path("/endpointRSXlookup")
+    @Path("/endpointInjectionPattern1")
     @GET
     public String getLookupConfigValue() {
+        // Padrão 2 para inclusão de propriedade de configuração
         Config config = ConfigProvider.getConfig();
-        String value = config.getValue("value", String.class);
-        return "value= " + value;
+        String includedValue = config.getValue("value", String.class);
+        return "value included by pattern 2 is = " + includedValue;
     }
 }
