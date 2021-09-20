@@ -9,4 +9,5 @@ import javax.ws.rs.ApplicationPath;
 @ApplicationPath("/aplicationName")
 public class ConfigQuarkusTemplateAplication extends Application {
     // Inicialização do sistema de inteligência artificial, para lidar com atualização automática do site.
+    // Inicialização do padrão de obserser: attach, detach and notify.
 }

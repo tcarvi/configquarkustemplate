@@ -1,4 +1,4 @@
-package com.tcarvi.ai.helper;
+package com.tcarvi.ai.action.helper;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,16 +1,8 @@
-package com.tcarvi.ai.actions;
+package com.tcarvi.ai.action;
 
-import com.tcarvi.ai.helper.ThreadExecution;
-// import java.io.BufferedReader;
-// import java.io.IOException;
-// import java.io.InputStream;
-// import java.io.InputStreamReader;
-// import java.nio.file.Files;
-// import java.nio.file.Path;
-// import java.nio.file.Paths;
-// import java.util.Objects;
+import com.tcarvi.ai.action.helper.ThreadExecution;
 
-public class UpdateSiteSrc {
+public class actionService {
 
 	// public static void gitClone(Path directory, String originUrl) throws IOException, InterruptedException {
 	// 	runCommand(directory.getParent(), "git", "clone", originUrl, directory.getFileName().toString());

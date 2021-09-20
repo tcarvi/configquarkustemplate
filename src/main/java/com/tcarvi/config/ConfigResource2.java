@@ -9,7 +9,7 @@ import javax.ws.rs.Path;
 
 @Path("/pathforconfig2")
 @RequestScoped
-public class ConfigController2 {
+public class ConfigResource2 {
 
     @Path("/endpointRSXlookup")
     @GET
