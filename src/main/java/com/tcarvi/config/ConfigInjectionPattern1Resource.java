@@ -6,7 +6,7 @@ import javax.enterprise.context.RequestScoped;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("/pathforconfig1")
+@Path("/pathForConfigInjectionPattern1")
 @RequestScoped
 public class ConfigInjectionPattern1Resource {
 
@@ -14,10 +14,10 @@ public class ConfigInjectionPattern1Resource {
     @ConfigProperty(name = "injected.value")
     String injectedValue;
 
-    @Path("/endpointInjectionPattern1")
+    @Path("/endpointForConfigInjectionPattern1")
     @GET
     public String getInjectedConfigValue() {
-        return "value injected by pattern 1 is = " + injectedValue;
+        return "Value injected by pattern 1 is = " + injectedValue;
     }
 
 }

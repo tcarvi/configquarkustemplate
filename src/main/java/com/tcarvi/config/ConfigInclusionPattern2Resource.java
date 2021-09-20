@@ -7,16 +7,16 @@ import javax.enterprise.context.RequestScoped;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("/pathforconfig2")
+@Path("/pathForConfigInclusionPattern2")
 @RequestScoped
 public class ConfigInclusionPattern2Resource {
 
-    @Path("/endpointInjectionPattern1")
+    @Path("/endpointForConfigInclusionPattern2")
     @GET
     public String getLookupConfigValue() {
         // Padrão 2 para inclusão de propriedade de configuração
         Config config = ConfigProvider.getConfig();
         String includedValue = config.getValue("value", String.class);
-        return "value included by pattern 2 is = " + includedValue;
+        return "Value included by pattern 2 is = " + includedValue;
     }
 }
