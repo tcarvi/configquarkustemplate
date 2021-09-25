@@ -19,14 +19,14 @@ mvn package
 ---
 
 - It produces:  
-    - `configquarkustemplate.jar`
-    - `configquarkustemplate-runner.jar`
+    - `configquarkustemplate-[version].jar`
+    - `quarkus-app/quarkus-run.jar`
 
 ---
 
 - To run the application:
 ```console
-java -jar target/configquarkustemplate-runner.jar
+java -jar target/quarkus-app/quarkus-run.jar
 ```  
 
 ---
