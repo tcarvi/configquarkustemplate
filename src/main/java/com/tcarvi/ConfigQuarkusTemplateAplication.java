@@ -1,10 +1,10 @@
 package com.tcarvi;
 
-import javax.ws.rs.core.Application;
 import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
 
 /**
- * Comments
+ * Inicialização da Aplicação
  */
 @ApplicationPath("/applicationName")
 public class ConfigQuarkusTemplateAplication extends Application {
